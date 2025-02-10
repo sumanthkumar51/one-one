@@ -8,6 +8,10 @@
         body {
             text-align: center;
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
         }
         #gameArea {
             position: relative;
@@ -16,6 +20,9 @@
             border: 2px solid black;
             margin: 20px auto;
             overflow: hidden;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         #box {
             position: absolute;
@@ -23,6 +30,11 @@
             height: 50px;
             background-color: red;
             cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.1s;
+        }
+        #box:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
